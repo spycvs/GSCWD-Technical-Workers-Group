@@ -1,0 +1,95 @@
+/* Styles go here */
+body {
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin:0;
+  padding:0;
+  line-height: 1.5;
+}
+.b {
+  background-color: #0058b2;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+
+}
+
+.b:hover {opacity: 1}
+
+.uppercase {
+  text-transform: uppercase;
+  }
+
+
+.page-header, .page-header-space {
+    height: 130px;
+}
+  
+.page-footer, .page-footer-space {
+    height: 50px;
+  
+  }
+.blue
+{
+    color: rgb(29, 116, 216);
+}
+.linkcolor
+{
+    color: rgb(0, 30, 197);
+}
+
+.t
+{
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  align-content: center;
+}
+
+.page-header {
+  position: fixed;
+  top: 0mm;
+  width: 100%;
+  height: 135px;
+  background: rgb(255, 255, 255); /* for demo */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.page {
+  page-break-after: always;
+}
+
+@page {
+  size: 8.5in 13in;
+  margin: 10mm 20mm 10mm 20mm; 
+}
+
+@media print {
+  /*table { page-break-inside:auto }
+  tr    { page-break-inside:avoid; page-break-after:auto }*/
+   thead {display: table-header-group;} 
+   tfoot {display: table-footer-group;}
+  
+   
+   button {display: none;}
+   body {margin: 0;}
+}
